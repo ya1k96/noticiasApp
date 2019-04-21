@@ -1,0 +1,18 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Con cafe mas tarde
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <!-- Loading Crescent -->
+    <app-noticias *ngIf="dataLocal.articles.length != 0" [fav]="true"  [noticias]="dataLocal.articles"></app-noticias>
+    <ion-slides disable="true" *ngIf="dataLocal.articles.length == 0">
+      <ion-slide>
+        <ion-label>No hay favoritos</ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+<ion-progress-bar type="indeterminate" *ngIf="loading"></ion-progress-bar>

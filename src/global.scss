@@ -9,3 +9,27 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.text-primary {
+    color: lightgray;
+}
+
+.action-dark {
+   background-color: var( --ion-color-dark ) !important;
+   color: white !important;
+}
+
+.action-dark ion-icon{
+   color: white !important;    
+}
+
+.action-sheet-group.sc-ion-action-sheet-md{
+    background-color: var( --ion-color-dark ) !important;
+}
+.action-sheet-title.sc-ion-action-sheet-md {
+    color: white !important;
+}
+
+.tab-selected {
+    color: var( --ion-color-primary ) !important;
+}
